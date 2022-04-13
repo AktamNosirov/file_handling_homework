@@ -18,7 +18,7 @@ def main(data:str):
 
 # Read data from file
 
-fayl3=open("txt_file\\data03.txt","r")
+fayl3=open("txt_file/data03.txt","r")
 data=fayl3.read()
 print(main(data))
 fayl3.close()
