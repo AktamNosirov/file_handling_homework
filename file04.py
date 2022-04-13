@@ -11,7 +11,7 @@ def main(data:str):
     while ind<len(data) :
         if  data[ind].isalpha() :
             a=data[ind]
-            list+=[a]
+            list.append(a)
         ind+=1  
       
     return list 
