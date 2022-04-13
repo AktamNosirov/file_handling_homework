@@ -6,5 +6,20 @@ def main(data:str):
     Returns:
         int: return answer
     """
+    
+    list=[]
+    ind=0
+    while ind<len(data) :
+        if  data[ind].isdigit() :
+            a=data[ind]
+            list+=[a]
+        ind+=1  
+      
+    return max(list) 
 
-# Read data from file
+
+
+fayl8=open("txt_file/data08.txt","r")
+data=fayl8.read()
+print(main(data))
+fayl8.close()
