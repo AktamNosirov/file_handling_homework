@@ -12,7 +12,7 @@ def main(data:str):
     while ind<len(data) :
         if  data[ind].isdigit() :
             a=data[ind]
-            list+=[a]
+            list.append(a)
         ind+=1  
       
     return max(list) 
