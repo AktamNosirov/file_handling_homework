@@ -9,7 +9,7 @@ def main(data:str):
     list=[]
     ind=0
     while ind<len(data) :
-        if  not data[ind].isalpha() :
+        if  not data[ind].isdigit() :
             a=data[ind]
             list.append(a)
         ind+=1  
