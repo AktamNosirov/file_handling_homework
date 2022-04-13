@@ -1,3 +1,6 @@
+from re import I
+
+
 def main(data:str):
     """
     The data is from the file. Find the largest of the numeric characters.
@@ -9,11 +12,14 @@ def main(data:str):
     
     list=[]
     ind=0
-    while ind<len(data) :
-        if  data[ind].isdigit() :
-            a=data[ind]
-            list.append(a)
-        ind+=1  
+    for i in data.split("\n"):
+       while ind<len(data) :
+            if data[ind].isdigit() :
+               a=data[ind]
+               list.append(a)
+            ind+=1  
+           
+      
       
     return max(list) 
 
