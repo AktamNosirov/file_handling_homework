@@ -6,7 +6,7 @@ def main(data:str):
     Returns:
         list: return answer
     """
-    
+    list=[]
     ind=0
     num_numbers=0
     num_caracters=0
@@ -18,7 +18,7 @@ def main(data:str):
          
         ind+=1  
       
-    return num_numbers
+    return list+[num_numbers]+[num_caracters]
 
 # Read data from file
 
